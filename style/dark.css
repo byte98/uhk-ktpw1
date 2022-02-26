@@ -24,6 +24,9 @@
     /* Background of navigation bar */
     --colour-background-nav: linear-gradient(rgb(25, 92, 180), rgb(0, 31, 99));
 
+    /* Background of odd dropdown menu items */
+    --colour-background-dropdown-odd: rgb(24, 24, 24);
+
     /* Background of dropdown menu item hovered */
-    --colour-background-dropdown-hover: rgb(48, 48, 48);
+    --colour-background-dropdown-hover: rgb(80, 80, 80);
  }
