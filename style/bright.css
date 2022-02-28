@@ -22,11 +22,20 @@
     --colour-foreground: black;
 
     /* Background of navigation bar */
-    --colour-background-nav: linear-gradient(rgb(100, 161, 240), rgb(61, 115, 231));
+    --colour-background-nav: linear-gradient(rgb(157, 198, 252), rgb(110, 153, 245));
 
     /* Background of odd dropdown menu items */
     --colour-background-dropdown-odd: rgb(231, 231, 231);
 
     /* Background of dropdown menu items hovered */
     --colour-background-dropdown-hover: rgb(175, 175, 175);
+
+    /* Colour of border of footer */
+    --colour-border-footer: rgb(110, 153, 245);
+
+    /* Background colour of footer */
+    --colour-background-footer: linear-gradient(var(--colour-background), rgb(200, 200, 200));
+
+    /* Background image of header */
+    --image-background-header: url("../images/background-light.webp");
 }

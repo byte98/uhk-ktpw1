@@ -29,4 +29,13 @@
 
     /* Background of dropdown menu item hovered */
     --colour-background-dropdown-hover: rgb(80, 80, 80);
+
+    /* Colour of border of footer */
+    --colour-border-footer: rgb(25, 92, 180);
+
+    /* Background colour of footer */
+    --colour-background-footer: linear-gradient(var(--colour-background), rgb(55, 55, 55));
+
+    /* Background image of header */
+    --image-background-header: url("../images/background-dark.webp");
  }
