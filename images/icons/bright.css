@@ -1,0 +1,55 @@
+/**
+ * Copyright 2022 Jiri Skoda <developer@skodaj.cz>
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ .icon{
+     display: inline-block;
+     width: 64px;
+     height: 64px;
+     background-size: contain;
+     background-repeat: no-repeat;
+ }
+
+ .icon-beam{
+    background-image: url("../icons/beam-light.webp");
+}
+
+.icon-history{
+    background-image: url("../icons/history-light.webp");
+}
+
+.icon-home{
+    background-image: url("../icons/home-light.webp");
+}
+
+.icon-missions{
+    background-image: url("../icons/missions-light.webp");
+}
+
+.icon-module{
+    background-image: url("../icons/module-light.webp");
+}
+
+.icon-pressure{
+    background-image: url("../icons/pressure-light.webp");
+}
+
+.icon-spaceship{
+    background-image: url("../icons/spaceship-light.webp");
+}
+
+.icon-unpressure{
+    background-image: url("../icons/unpressure-light.webp");
+}

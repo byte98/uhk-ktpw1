@@ -6,8 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="style/bright.css">
         <link type="text/css" rel="stylesheet" href="style/dark.css" media="all and (prefers-color-scheme: dark)">
+        <link type="text/css" rel="stylesheet" href="images/icons/dark.css">
+        <link type="text/css" rel="stylesheet" href="images/icons/bright.css" media="all and (prefers-color-scheme: dark)">
         <link type="text/css" rel="stylesheet" href="style/clearsans.css">
         <link type="text/css" rel="stylesheet" href="style/global.css">
+        <link type="text/css" rel="stylesheet" href="style/global-tablet.css" media="all and (max-width: 1024px)">
+        <link type="text/css" rel="stylesheet" href="style/global-mobile.css" media="all and (max-width: 768px)">
+        <link type="text/css" rel="stylesheet" href="style/index.css">
         <title>Mezinárodní vesmírná stanice</title>
     </head>
     <body>
@@ -16,152 +21,177 @@
         </header>
         <nav>
             <ul>
-                <li>
-                    <a href="./index.html">Domů</a>
+                <li class="selected">
+                    <a href="./index.html"><span class="icon icon-home"></span><span>   Domů</span></a>
                 </li>
                 <li class="dropdown">
-                    <a href="./modules.html">Moduly</a>
+                    <a href="./modules.html"><span class="icon icon-module"></span><span>Moduly</span></a>
                     <ul>
                         <li class="dropdown">
-                            <a href="./modules.html#pressurized">Tlakované moduly</a>
+                            <a href="./modules.html#pressurized"><span class="icon icon-pressure"></span>Tlakované moduly</a>
                             <ul>
                                 <li>
-                                    <a href="./modules.html#unity">Unity</a>
+                                    <a href="./modules.html#unity"><img src="images/nasa.svg" alt="Logo NASA" />Unity</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#zvezda">Zvezda</a>
+                                    <a href="./modules.html#zvezda"><img src="images/roscosmos.svg" alt="Logo Roskosmos" />Zvezda</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#destiny">Destiny</a>
+                                    <a href="./modules.html#destiny"><img src="images/nasa.svg" alt="Logo NASA" />Destiny</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#quest">Quest</a>
+                                    <a href="./modules.html#quest"><img src="images/nasa.svg" alt="Logo NASA" />Quest</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#poisk">Poisk</a>
+                                    <a href="./modules.html#poisk"><img src="images/roscosmos.svg" alt="Logo Roskosmos" />Poisk</a>
                                 </li>
                                 <li>                                    
-                                    <a href="./modules.html#harmony">Harmony</a>
+                                    <a href="./modules.html#harmony"><img src="images/esa.png" alt="Logo ESA" />Harmony</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#tranquility">Tranquility</a>
+                                    <a href="./modules.html#tranquility"><img src="images/nasa.svg" alt="Logo NASA" />Tranquility</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#columbus">Columbus</a>
+                                    <a href="./modules.html#columbus"><img src="images/esa.png" alt="Logo ESA" />Columbus</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#kibo">Kibō</a>
+                                    <a href="./modules.html#kibo"><img src="images/jaxa.svg" alt="Logo JAXA" />Kibō</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#cupola">Cupola</a>
+                                    <a href="./modules.html#cupola"><img src="images/esa.png" alt="Logo ESA" />Cupola</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#rassvet">Rassvet</a>
+                                    <a href="./modules.html#rassvet"><img src="images/roscosmos.svg" alt="Logo Roskosmos" />Rassvet</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#leonardo">Leonardo</a>
+                                    <a href="./modules.html#leonardo"><img src="images/nasa.svg" alt="Logo NASA" />Leonardo</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#bishop">Bishop</a>
+                                    <a href="./modules.html#bigelow-expendable-activity-module"><img src="images/nasa.svg" alt="Logo NASA" />Bigelow Expendable Activity Module</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#nauka">Nauka</a>
+                                    <a href="./modules.html#bishop"><img src="images/nasa.svg" alt="Logo NASA" />Bishop</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#prichal">Pričal</a>
+                                    <a href="./modules.html#nauka"><img src="images/roscosmos.svg" alt="Logo Roskosmos" />Nauka</a>
+                                </li>
+                                <li>
+                                    <a href="./modules.html#prichal"><img src="images/roscosmos.svg" alt="Logo Roskosmos" />Pričal</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="./modules.html#unpressurized">Netlakované moduly</a>
+                            <a href="./modules.html#unpressurized"><span class="icon icon-unpressure"></span>Netlakované moduly</a>
                             <ul>
                                 <li class="dropdown">
-                                    <a href="./modules.html#trusses">Příhradové konstrukce</a>
+                                    <a href="./modules.html#trusses"><span class="icon icon-beam"></span>Příhradové konstrukce</a>
                                     <ul>
                                         <li>
-                                            <a href="./modules.html#z1-truss">Z1 Truss</a>
+                                            <a href="./modules.html#z1-truss"><img src="images/nasa.svg" alt="Logo NASA" />Z1 Truss</a>
                                         </li>
                                         <li>
-                                            <a href="./modules.html#p6-truss">P6 Truss</a>
+                                            <a href="./modules.html#p6-truss"><img src="images/nasa.svg" alt="Logo NASA" />P6 Truss</a>
                                         </li>
                                         <li>
-                                            <a href="./modules.html#s0-truss">S0 Truss</a>
+                                            <a href="./modules.html#s0-truss"><img src="images/nasa.svg" alt="Logo NASA" />S0 Truss</a>
                                         </li>
                                         <li>
-                                            <a href="./modules.html#s1-truss">S1 Truss</a>
+                                            <a href="./modules.html#s1-truss"><img src="images/nasa.svg" alt="Logo NASA" />S1 Truss</a>
                                         </li>
                                         <li>
-                                            <a href="./modules.html#p1-truss">P1 Truss</a>
+                                            <a href="./modules.html#p1-truss"><img src="images/nasa.svg" alt="Logo NASA" />P1 Truss</a>
                                         </li>
                                         <li>
-                                            <a href="./modules.html#p3p4-truss">P3/P4 Truss</a>
+                                            <a href="./modules.html#p3p4-truss"><img src="images/nasa.svg" alt="Logo NASA" />P3/P4 Truss</a>
                                         </li>
                                         <li>
-                                            <a href="./modules.html#p5-truss">P5 Truss</a>
+                                            <a href="./modules.html#p5-truss"><img src="images/nasa.svg" alt="Logo NASA" />P5 Truss</a>
                                         </li>
                                         <li>
-                                            <a href="./modules.html#s3s4-truss">S3/S4 Truss</a>
+                                            <a href="./modules.html#s3s4-truss"><img src="images/nasa.svg" alt="Logo NASA" />S3/S4 Truss</a>
                                         </li>
                                         <li>
-                                            <a href="./modules.html#s5-truss">S5 Truss</a>
+                                            <a href="./modules.html#s5-truss"><img src="images/nasa.svg" alt="Logo NASA" />S5 Truss</a>
                                         </li>
                                         <li>
-                                            <a href="./modules.html#s6-truss">S6 Truss</a>
+                                            <a href="./modules.html#s6-truss"><img src="images/nasa.svg" alt="Logo NASA" />S6 Truss</a>
                                         </li>
                                     </ul>
                                 </li>                                
                                 <li>
-                                    <a href="./modules.html#esp-1">ESP-1</a>
+                                    <a href="./modules.html#esp-1"><img src="images/nasa.svg" alt="Logo NASA" />ESP-1</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#canadarm2">Canadarm2</a>
+                                    <a href="./modules.html#canadarm2"><img src="images/csa.svg" alt="Logo CSA" />Canadarm2</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#quest-joint-airlock-module">Quest Joint Airlock Module</a>
+                                    <a href="./modules.html#quest-joint-airlock-module"><img src="images/nasa.svg" alt="Logo NASA" />Quest Joint Airlock Module</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#mobile-servicing-system">Mobile Servicing System</a>
+                                    <a href="./modules.html#mobile-servicing-system"><img src="images/nasa.svg" alt="Logo NASA" />Mobile Servicing System</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#esp-2">ESP-2</a>
+                                    <a href="./modules.html#esp-2"><img src="images/nasa.svg" alt="Logo NASA" />ESP-2</a>
                                 </li>                                
                                 <li>
-                                    <a href="./modules.html#esp-3">ESP-3</a>
+                                    <a href="./modules.html#esp-3"><img src="images/nasa.svg" alt="Logo NASA" />ESP-3</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#dextre">Dextre</a>
+                                    <a href="./modules.html#dextre"><img src="images/csa.svg" alt="Logo CSA" />Dextre</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#express-logistic-carriers-1-and-2">EXPRESS Logistic Carriers 1 &amp; 2</a>
+                                    <a href="./modules.html#express-logistic-carriers-1-and-2"><img src="images/nasa.svg" alt="Logo NASA" />EXPRESS Logistic Carriers 1 &amp; 2</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#express-logistic-carriers-3">EXPRESS Logistic Carriers 3</a>
+                                    <a href="./modules.html#express-logistic-carriers-3"><img src="images/nasa.svg" alt="Logo NASA" />EXPRESS Logistic Carriers 3</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#alpha-magnetic-spectrometer">Alpha Magnetic Spectrometer</a>
+                                    <a href="./modules.html#alpha-magnetic-spectrometer"><img src="images/nasa.svg" alt="Logo NASA" />Alpha Magnetic Spectrometer</a>
                                 </li>
                                 <li>
-                                    <a href="./modules.html#express-logistic-carriers-4">EXPRESS Logistic Carriers 4</a>
-                                </li>
-                                <li>
-                                    <a href="./modules.html#express-logistic-carriers-4">Bigelow Expendable Activity Module</a>
+                                    <a href="./modules.html#express-logistic-carriers-4"><img src="images/nasa.svg" alt="Logo NASA" />EXPRESS Logistic Carriers 4</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="./history.html">Historie</a>
+                    <a href="./history.html"><span class="icon icon-history"></span><span>Historie</span></a>
                 </li>
                 <li>
-                    <a href="./history.html">Lodě</a>
+                    <a href="./history.html"><span class="icon icon-spaceship"></span><span>Lodě</span></a>
                 </li>
                 <li>
-                    <a href="./history.html">Mise</a>
+                    <a href="./history.html"><span class="icon icon-missions"></span><span>Mise</span></a>
                 </li>
             </ul>
         </nav>
-        <main></main>
+        <main>
+            <section>
+                <h2>Informace o stanici</h2>
+                <article>
+                    <h3>Co je mezinárodní vesmírná stanice?</h3>
+                    <aside class="right">
+                        <img src="images/iss.webp" alt="Obrázek mezinárodní vesmírné stanice">
+                    </aside>
+                    <p>Mezinárodní vesmírná stanice, známější pod zkratkou ISS, je v současné době jediná trvale obydlená vesmírná stanice. První díl stanice, modul <a href="./modules.html#zarja">Zarja</a>, byl vynesen na oběžnou dráhu 20. listopadu 1998. Od 2. listopadu 2000, kdy na stanici vstoupila první stálá posádka, je trvale obydlena. V současné době je posádka, která se každých 6 měsíců obměňuje, tvořena 7 členy. Stanice je umístěna na nízké oběžné dráze Země ve výšce kolem 400 km. Při průměrné rychlosti okolo 7 700 m/s (27 720 km/h) pak pravidelně obíhá Zemi s periodou cca 92 minut. </p>
+                    <p>Mezinárodní vesmírná stanice je společným projektem pěti kosmických agentur: NASA, Roskosmos, JAXA, CSA a ESA (účastní se 11 z jejích členů; Belgie, Dánsko, Francie, Německo, Itálie, Nizozemsko, Norsko, Španělsko, Švédsko, Švýcarsko a Velká Británie). Základní rozdělení je na ruský a americký segment. Do ruského segmentu patří šest modulů. Do amerického segmentu patří tři moduly, jejichž podpůrné služby jsou rozděleny 76,6 % pro NASA, 12,8 % pro JAXA, 8,3 % pro ESA a 2,3 % pro CSA. </p>
+                    <p>Původně plánovaná životnost ISS byla do roku 2016. V zimě 2013–2014 bylo zajištěno finanční krytí vládou USA do roku 2024 a v poslední den roku 2021 NASA oznámila, že vláda bude provoz stanice financovat až do roku 2030.Na přelomu ledna a února 2022 pak byl zveřejněn plán, který počítá s postupným snižováním průměrné výšky dráhy stanice a řízeným ukončením existence stanice v lednu 2031 za pomoci brzdicího manévru za pomoci zásobovacích lodí <a href="./ships.html#progress">Progress</a>, případně lodi <a href="./ships.html#cygnus">Cygnus</a>. Manévr by byl proveden tak, aby zbytky stanice, které v atmosféře neshoří, dopadly do obvyklé odlehlé oblasti v Tichém oceánu, na půli cesty mezi Novým Zélandem a Chile. NASA současně předpokládá, že ve vědeckém programu bude pokračovat ve spolupráci se soukromými subjekty, které pracují na vlastních projektech orbitálních stanic.</p>
+                </article>
+                <article>
+                    <h3>Aktuální pozice stanice</h3>
+                </article>
+            </section>
+            <section>
+                <h2>Informace o těchto stránkách</h2>
+                <article>
+                    <h3>Proč tyto stránky existují?</h3>
+                </article>
+                <article>
+                    <h3>Použité zdroje třetích stran</h3>
+                </article>
+            </section>
+        </main>
         <footer>
                 <ul>
                     <li>Semestrální práce</li>
@@ -171,4 +201,3 @@
                 </ul>
         </footer>
     </body>
-</html>

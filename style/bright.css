@@ -24,6 +24,9 @@
     /* Background of navigation bar */
     --colour-background-nav: linear-gradient(rgb(157, 198, 252), rgb(110, 153, 245));
 
+    /* Background colour of selected item in navigation bar */
+    --colour-backgrouon-nav-selected: rgb(168, 192, 243);
+
     /* Background of odd dropdown menu items */
     --colour-background-dropdown-odd: rgb(231, 231, 231);
 
