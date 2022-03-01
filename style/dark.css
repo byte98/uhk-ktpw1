@@ -1,5 +1,5 @@
 /**
- * Copyright 2022 Jiri Skoda <developer@skodaj.cz>
+ * Copyright 2022 Jiri Skoda <skodaji1@uhk.cz>
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,11 +21,14 @@
      /* Default foreground colour for all pages */
      --colour-foreground: white;
 
+     /* Translucent variant of background colour */
+    --colour-background-translucent: rgba(0, 0, 0, 0.5);
+
     /* Background of navigation bar */
     --colour-background-nav: linear-gradient(rgb(25, 92, 180), rgb(0, 31, 99));
 
     /* Background colour of selected item in navigation bar */
-    --colour-backgrouon-nav-selected: rgb(0, 48, 87);
+    --colour-backgrouon-nav-selected: rgb(0, 31, 99);
 
     /* Background of odd dropdown menu items */
     --colour-background-dropdown-odd: rgb(24, 24, 24);

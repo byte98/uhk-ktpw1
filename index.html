@@ -9,6 +9,7 @@
         <link type="text/css" rel="stylesheet" href="images/icons/dark.css">
         <link type="text/css" rel="stylesheet" href="images/icons/bright.css" media="all and (prefers-color-scheme: dark)">
         <link type="text/css" rel="stylesheet" href="style/clearsans.css">
+        <link type="text/css" rel="stylesheet" href="style/leaflet.css">
         <link type="text/css" rel="stylesheet" href="style/global.css">
         <link type="text/css" rel="stylesheet" href="style/global-tablet.css" media="all and (max-width: 1024px)">
         <link type="text/css" rel="stylesheet" href="style/global-mobile.css" media="all and (max-width: 768px)">
@@ -16,6 +17,10 @@
         <title>Mezinárodní vesmírná stanice</title>
     </head>
     <body>
+        <script src="script/leaflet.js" defer></script>
+        <script src="script/bing.js" defer></script>
+        <script src="script/ant-path.js" defer></script>
+        <script src="script/iss-position.js" defer></script>
         <header>
             <h1>Mezinárodní vesmírná stanice</h1>
         </header>
@@ -180,6 +185,12 @@
                 </article>
                 <article>
                     <h3>Aktuální pozice stanice</h3>
+                    <p>Níže zobrazená mapa ukazuje přibližnou pozici stanice vzhledem k povrchu planety. Autor těchto stránek nijak neručí za správnost této pozice.</p>
+                    <p>
+                        <div id="iss-map">
+                            <span id="update-time">Poslední aktualizace: <span id="update-time-value"></span></span>
+                        </div>
+                    </p>
                 </article>
             </section>
             <section>

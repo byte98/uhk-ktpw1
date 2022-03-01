@@ -1,5 +1,5 @@
 /**
- * Copyright 2022 Jiri Skoda <developer@skodaj.cz>
+ * Copyright 2022 Jiri Skoda <skodaji1@uhk.cz>
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,6 +41,7 @@ nav > ul{
 nav > ul > li{
     flex: 1 1 0px;
     text-align: center;
+    transition: 300ms;
 }
 
 nav ul > li > a{
@@ -49,7 +50,7 @@ nav ul > li > a{
     padding: 5px;
 }
 
-nav ul li{
+li, a{
     transition: 300ms;
 }
 
@@ -95,6 +96,7 @@ nav ul > li.dropdown > ul{
     z-index: 1;
     left: 2rem;
     text-align: left;
+    z-index: 2048;
 }
 
 nav ul > li.dropdown:hover > ul{
@@ -108,6 +110,10 @@ nav ul > li.dropdown > ul > li:hover{
 
 nav > ul > li  ul > li:nth-child(2n + 1){
     background-color: var(--colour-background-dropdown-odd);
+}
+
+nav > ul > li:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
 }
 
 header{
@@ -130,7 +136,7 @@ footer a:hover{
 
 footer > ul > li{
     display: inline-block;
-    border-right: 2px solid var(--colour-border-footer);
+    border-right: 2px solid var(--colour-foreground);
     padding: 2px;
 }
 
