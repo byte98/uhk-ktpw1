@@ -17,3 +17,7 @@
 header{
     background-image: url("../images/cinema.mobile.webp");
 }
+
+nav > ul > li > a{
+    font-size: 0;
+}

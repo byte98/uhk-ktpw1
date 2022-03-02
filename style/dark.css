@@ -23,11 +23,30 @@
     --colour-background-translucent: rgba(0, 0, 0, 0.5);
 
     /* Primary background colour */
-    --colour-background-primary: rgb(131, 0, 0);
+    --colour-background-primary: rgb(92, 0, 0);
 
     /* Gradient of primary background colour */
     --colour-background-primary-gradient: linear-gradient(rgb(189, 2, 2), var(--colour-background-primary));
 
     /* Default foreground colour (mainly used for text) */
     --colour-foreground: #fff;
+
+
+
+    /*=========== DEFINITIONS OF IMAGES  ===========*/
+    
+    /* Logo of company */
+    --image-logo: url("../images/logo-bright.webp");
+
+    /* Icon of about page */
+    --image-about: url("../images/icons/about-bright.webp");
+
+    /* Icon of home page */
+    --image-home: url("../images/icons/home-bright.webp");
+
+    /* Icon of news */
+    --image-news: url("../images/icons/news-bright.webp");
+
+    /* Icon of program */
+    --image-program: url("../images/icons/program-bright.webp");
 }
