@@ -15,17 +15,14 @@
  */
 
  header{
-    background-image: url("../images/cinema.tablet.webp");
+    background-image: url("../images/building.tablet.webp");
 }
 
 nav > ul > li > a{
     font-size: 14pt;
 }
 
-a[href="index.html"]::before,
-a[href="program.html"]::before,
-a[href="novinky.html"]::before,
-a[href="o-nas.html"]::before{
-    display: block;
-    margin-right: 0;
+nav > ul > li > a{
+    display: block !important;
+    margin: 0;
 }

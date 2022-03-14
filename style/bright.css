@@ -23,30 +23,63 @@
     --colour-background-translucent: rgba(255, 255, 255, 0.5);
 
     /* Primary background colour */
-    --colour-background-primary: rgb(255, 60, 60);
+    --colour-background-primary: rgb(255, 148, 60);
 
     /* Gradient of primary background colour */
-    --colour-background-primary-gradient: linear-gradient(rgb(255, 125, 125), var(--colour-background-primary));
+    --colour-background-primary-gradient: linear-gradient(rgb(255, 194, 125), var(--colour-background-primary));
+
+    /* Background colour of warning message */
+    --colour-background-warning: rgb(255, 217, 46);   
+
+    /* Gradient of warning background colour */
+    --colour-background-warning-gradient: linear-gradient(rgb(255, 239, 167), var(--colour-background-warning));
+
+    /* Background colour for some kind of even items */
+    --colour-background-even: rgb(247, 213, 185);
 
     /* Default foreground colour (mainly used for text) */
     --colour-foreground: #000;
 
+    /* Primary foureground colour */
+    --colour-foreground-primary: rgb(160, 72, 0);
+
 
 
     /*=========== DEFINITIONS OF IMAGES  ===========*/
-    
-    /* Logo of company */
-    --image-logo: url("../images/logo-dark.webp");
 
     /* Icon of about page */
     --image-about: url("../images/icons/about-dark.webp");
 
+    /* Small version of icon of about page */
+    --image-about-s: url("../images/icons/about-s-dark.webp");
+
+    /* Small version of icon of about webpage page */
+    --image-about-webpage-s: url("../images/icons/about-pages-s-dark.webp");
+
+    /* Icon of warning or error message */
+    --image-error: url("../images/icons/error-dark.webp");
+
     /* Icon of home page */
     --image-home: url("../images/icons/home-dark.webp");
+
+    /* Small version of icon of home page */
+    --image-home-s: url("../images/icons/home-s-dark.webp");
+ 
+    /* Small version of Icons8 icon */
+    --image-icon8-s: url("../images/icons/icons8-s-dark.webp");
+
+    /* Icon of lecturer */
+    --image-lecturer: url("../images/icons/lecturer-dark.webp");
 
     /* Icon of news */
     --image-news: url("../images/icons/news-dark.webp");
 
     /* Icon of program */
     --image-program: url("../images/icons/program-dark.webp");
+
+    /* Small version of icon of program */
+    --image-program-s: url("../images/icons/program-s-dark.webp");
+
+    /* Small version of icon of sitemap */
+    --image-sitemap-s: url("../images/icons/sitemap-s-dark.webp");
 }

@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
     <link type="text/css" rel="stylesheet" href="font/clearsans.css">
     <link type="text/css" rel="stylesheet" href="style/bright.css">
-    <link type="text/css" rel="stylesheet" href="style/dark.css" media="all and (prefers-color-scheme: dark)">
+    <link type="text/css" rel="stylesheet" href="style/dark.css" media="screen and (prefers-color-scheme: dark)">
     <link type="text/css" rel="stylesheet" href="style/global.css">
-    <link type="text/css" rel="stylesheet" href="style/global.tablet.css" media="all and (max-width: 1024px)">
-    <link type="text/css" rel="stylesheet" href="style/global.mobile.css" media="all and (max-width: 768px)">
-    <title>Kino Omega</title>
+    <link type="text/css" rel="stylesheet" href="style/global.tablet.css" media="screen and (max-width: 1020px)">
+    <link type="text/css" rel="stylesheet" href="style/global.mobile.css" media="screen and (max-width: 768px)">
+    <link type="text/css" rel="stylesheet" href="style/icons.css">
+    <link type="text/css" rel="stylesheet" href="style/index.css">
+    <link type="text/css" rel="stylesheet" href="style/index.mobile.css" media="screen and (max-width: 768px)">
+    <title>Centrum Omega</title>
 </head>
 <body>
+    <script src="script/jquery.js" defer></script>
+    <script src="script/global.js" defer></script>
+    <script src="script/index.js" defer></script>
     <header>
-        <h1><img src="images/logo-bright.webp" alt="Logo kina Omega" /></h1>
+        <h1><img src="images/logo.webp" alt="Logo centra Omega" />Centrum Omega</h1>
     </header>
     <nav>
         <ul>
@@ -22,21 +29,309 @@
                 <a href="index.html">Domů</a>
             </li>
             <li>
-                <a href="program.html">Program</a>
+                <a href="pages/akce.html">Akce</a>
             </li>
             <li>
-                <a href="novinky.html">Novinky</a>
+                <a href="pages/novinky.html">Novinky</a>
             </li>
             <li>
-                <a href="o-nas.html">O nás</a>
+                <a href="pages/o-nas.html">O nás</a>
             </li>
         </ul>
     </nav>
     <main>
-        <article class="popup warning">
-            <h2>Upozornění</h2>
-            <p>Z důvodu pandemie onemocnění covid-19 Vás žádame, abyste při návštěvě kina Omega nosili respirátor třídy FFP2. Děkujeme za pochopení.</p>
-        </article>
+        <section>
+            <article>
+                <h2>Centrum Omega</h2>
+                <section class="navigation" id="breadcrumb-navigation">
+                    <h3>Kde se nacházíte</h3>
+                    <menu>
+                        <li><a class="compact" href="index.html">Domů</a></li>
+                    </menu>
+                </section>
+                <p>Vítejte na webových stránkách kulturního a společenského centra Omega. Naleznete zde aktuální informace, novinky, právě bežící i plánované akce a spoustu dalšího obsahu.</p>
+            </article>
+            <article class="message warning">
+                <h2>Upozornění</h2>
+                <p>Z důvodu pandemie onemocnění covid-19 Vás žádame, abyste při návštěvě centra Omega nosili respirátor třídy FFP2. Děkujeme za pochopení.</p>
+            </article>
+        </section>
+        <section class="flexible" id="content">
+            <article id="program">
+                <h2>Výběr akcí</h2>
+                <div></div><div></div>
+                <ul>
+                    <li>
+                        <a href="pages/akce/picasso-zivot-a-dilo.html">
+                        <dl>
+                            <dt>
+                                <picture>
+                                    <source media="screen and (max-width: 768px)" srcset="images/previews/picasso.mobile.webp">
+                                    <source media="screen and (max-width: 1020px)" srcset="images/previews/picasso.tablet.webp">
+                                    <img src="images/previews/picasso.webp" alt="Fotografie obrazu Pabla Picassa">
+                                </picture>
+                            </dt>
+                            <dd class="name">Picasso: Život a dílo</dd>
+                            <dt class="datetime">Datum a čas</dt>
+                            <dd>
+                                <time datetime="2022-04-02">2. dubna 2022</time>, celý den
+                            </dd>
+                            <dt class="place">
+                                Místo
+                            </dt>
+                            <dd>Budova D3, místnost 209</dd>
+                            <dt class="price">
+                                Cena
+                            </dt>
+                            <dd>Zdarma</dd>
+                        </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/akce/dluhova-poradna.html">
+                        <dl>
+                            <dt>
+                                <picture>
+                                    <source media="screen and (max-width: 768px)" srcset="images/previews/money.mobile.webp">
+                                    <source media="screen and (max-width: 1020px)" srcset="images/previews/money.tablet.webp">
+                                    <img src="images/previews/money.webp" alt="Obrázek skleničky s vysypaními mincemi">
+                                </picture>
+                            </dt>
+                            <dd class="name">Dluhová poradna</dd>
+                            <dt class="datetime">Datum a čas</dt>
+                            <dd>
+                                <time datetime="2022-04-04T17:00">4. dubna 2022, 17:00</time>
+                            </dd>
+                            <dt class="place">
+                                Místo
+                            </dt>
+                            <dd>Budova C3, místnost 51</dd>
+                            <dt class="price">
+                                Cena
+                            </dt>
+                            <dd>Zdarma</dd>
+                        </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/akce/tajemstvi-pyramid.html">
+                        <dl>
+                            <dt>
+                                <picture>
+                                    <source media="screen and (max-width: 768px)" srcset="images/previews/pyramid.mobile.webp">
+                                    <source media="screen and (max-width: 1020px)" srcset="images/previews/pyramid.tablet.webp">
+                                    <img src="images/previews/pyramid.webp" alt="Fotografie pyramidy">
+                                </picture>
+                            </dt>
+                            <dd class="name">Tajemství pyramid</dd>
+                            <dt class="datetime">Datum a čas</dt>
+                            <dd>
+                                <time datetime="2022-04-05T20:00">5. dubna 2022, 20:00</time>
+                            </dd>
+                            <dt class="place">
+                                Místo
+                            </dt>
+                            <dd>Budova C4, místnost 363</dd>
+                            <dt class="price">
+                                Cena
+                            </dt>
+                            <dd>Zdarma</dd>
+                        </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/akce/amazonie-plice-planety.html">
+                        <dl>
+                            <dt>
+                                <picture>
+                                    <source media="screen and (max-width: 768px)" srcset="images/previews/amazonia.mobile.webp">
+                                    <source media="screen and (max-width: 1020px)" srcset="images/previews/amazonia.tablet.webp">
+                                    <img src="images/previews/amazonia.webp" alt="Obrázek pralesního domu s člověkem na loďce">
+                                </picture>
+                            </dt>
+                            <dd class="name">Amazonie: plíce planety?</dd>
+                            <dt class="datetime">Datum a čas</dt>
+                            <dd>
+                                <time datetime="2022-04-08T19:30">8. dubna 2022, 19:30</time>
+                            </dd>
+                            <dt class="place">
+                                Místo
+                            </dt>
+                            <dd>Budova D2, místnost 256</dd>
+                            <dt class="price">
+                                Cena
+                            </dt>
+                            <dd>150 CZK/90 CZK</dd>
+                        </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/akce/autorske-psani.html">
+                        <dl>
+                            <dt>
+                                <picture>
+                                    <source media="screen and (max-width: 768px)" srcset="images/previews/typewriter.mobile.webp">
+                                    <source media="screen and (max-width: 1020px)" srcset="images/previews/typewriter.tablet.webp">
+                                    <img src="images/previews/typewriter.webp" alt="Malba psacího stroje">
+                                </picture>
+                            </dt>
+                            <dd class="name">Autorské psaní</dd>
+                            <dt class="datetime">Datum a čas</dt>
+                            <dd class="regular">
+                                Každé úterý, <time datetime="2022-05-04T16:00">16:00</time>
+                            </dd>
+                            <dt class="place">
+                                Místo
+                            </dt>
+                            <dd>Budova A4, místnost 202a</dd>
+                            <dt class="price">
+                                Cena
+                            </dt>
+                            <dd>700 CZK/500 CZK</dd>
+                        </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/akce/programovani-v-jazyce-c.html">
+                        <dl>
+                            <dt>
+                                <picture>
+                                    <source media="screen and (max-width: 768px)" srcset="images/previews/code.mobile.webp">
+                                    <source media="screen and (max-width: 1020px)" srcset="images/previews/code.tablet.webp">
+                                    <img src="images/previews/code.webp" alt="Fotografie monitoru počátače se zobrazeným zdrojovým kódem">
+                                </picture>
+                            </dt>
+                            <dd class="name">Programování v jazyce C</dd>
+                            <dt class="datetime">Datum a čas</dt>
+                            <dd class="regular">
+                                Každou středu, <time datetime="2022-04-06T20:00">20:00</time>
+                            </dd>
+                            <dt class="place">
+                                Místo
+                            </dt>
+                            <dd>Budova H1, místnost 130</dd>
+                            <dt class="price">
+                                Cena
+                            </dt>
+                            <dd>1000 CZK/800 CZK</dd>
+                        </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/akce/zaklady-korejstiny.html">
+                        <dl>
+                            <dt>
+                                <picture>
+                                    <source media="screen and (max-width: 768px)" srcset="images/previews/korean.mobile.webp">
+                                    <source media="screen and (max-width: 1020px)" srcset="images/previews/korean.tablet.webp">
+                                    <img src="images/previews/korean.webp" alt="Obrázek kamenné desky s korejským písmem">
+                                </picture>
+                            </dt>
+                            <dd class="name">Základy korejštiny</dd>
+                            <dt class="datetime">Datum a čas</dt>
+                            <dd class="regular">
+                                Každý čtvrtek, <time datetime="2022-04-07T19:00">19:00</time>
+                            </dd>
+                            <dt class="place">
+                                Místo
+                            </dt>
+                            <dd>Budova A4, místnost 204</dd>
+                            <dt class="price">
+                                Cena
+                            </dt>
+                            <dd>4100 CZK/3700 CZK</dd>
+                        </dl>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article id="news">
+                <h2>Novinky</h2>
+                <a href="./pages/ukrajina.html">
+                    <picture>
+                        <source media="screen and (max-width: 768px)" srcset="images/ukraine.mobile.webp">
+                        <source media="screen and (max-width: 1020px)" srcset="images/ukraine.tablet.webp">
+                        <img src="images/ukraine.webp" alt="Vlajka Ukrajiny s textem POMOC UKRAJINĚ">
+                    </picture>
+                </a>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="news-date">Datum</th>
+                            <th id="news-text">Zpráva</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="news-date"><time class="actual" datetime="2022-03-25T10:18">25.3.2022</time></td>
+                            <td headers="news-text"><a href="pages/novinky/rekonstrukce-budovy-d.html">Začala rekonstrukce budovy D</a></td>
+                        </tr>
+                        <tr>
+                            <td headers="news-date"><time class="actual" datetime="2022-03-22T16:20">22.3.2022</time></td>
+                            <td headers="news-text"><a href="pages/novinky/v-dubnu-prijede-vaclav-troupek.html">V dubnu přijede Václav Troupek</a></td>
+                        </tr>
+                        <tr>
+                            <td headers="news-date"><time class="actual" datetime="2022-03-22T10:39">22.3.2022</time></td>
+                            <td headers="news-text"><a href="pages/novinky/novy-kurz-programovani.html">Nový kurz programování</a></td>
+                        </tr>
+                        <tr>
+                            <td headers="news-date"><time class="actual" datetime="2022-03-21T18:51">21.3.2022</time></td>
+                            <td headers="news-text"><a href="pages/novinky/uzavreni-toalet-v-budove-a.html">Uzavření toalet v budově A</a></td>
+                        </tr>
+                        <tr>
+                            <td headers="news-date"><time class="actual" datetime="2022-03-15T06:03">15.3.2022</time></td>
+                            <td headers="news-text"><a href="pages/novinky/zruseni-dnesniho-kurzu-autorskeho-psani.html">Zrušení dnešního kurzu autorského psaní</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section id="partneri">
+            <h2>Partněři centra Omega</h2>
+            <p>Centrum Omega srdečně děkuje svým partnerům a podporovatelům. Pokud byste se i Vy či Vaše firma rozhodli pro partnerství s centrem Omega, využijte kterýkoliv kontakt v části <a class="compact" href="pages/o-nas.html">O nás</a>, případně se zastavte osobně na adrese centra.</p>
+            <article id="medialni-partneri">
+                <h3>Mediální partneři</h3>
+                <ul class="no-list">
+                    <li><img class="fit-content" src="images/partners/echo.webp" alt="Logo rádia Echo"></li>
+                    <li><img class="fit-content" src="images/partners/mediaprint.webp" alt="Logo společnosti MediaPrint"></li>
+                </ul>
+            </article>
+            <article id="sponzori">
+                <h3>Sponzoři</h3>
+                <ul class="no-list">
+                    <li><img class="fit-content" src="images/partners/plenderton.webp" alt="Logo společnosti Plenderton Czech Republic"></li>
+                    <li><img class="fit-content" src="images/partners/autopeta.webp" alt="Logo společnosti Auto Peta"></li>
+                    <li><img class="fit-content" src="images/partners/strumitransport.webp" alt="Logo společnosti Strumi Transport"></li>
+                    <li><img class="fit-content" src="images/partners/ecteko.webp" alt="Logo společnosti Ecteko Networks"></li>
+                    <li><img class="fit-content" src="images/partners/grendity.webp" alt="Logo společnosti Grendity Financial Solutions"></li>
+                </ul>
+            </article>
+        </section>
     </main>
+    <footer>
+        <dl>
+            <dt>Za správnost obsahu ručí</dt>
+            <dd>Jiří Škoda</dd>
+            <dt>Naposledy upraveno</dt>
+            <dd><time datetime="2022-03-10T16:48">10.03.2022</time></dd>
+        </dl>
+        <p>
+            <span>Semestrální práce</span>
+            <span>KIT/KTPW1 - Technologie pro publikování na Webu I</span>
+            <span><a href="https://fim.uhk.cz" target="_blank" referrerpolicy="no-referrer">Fakulta informatiky a managementu</a>, <a href="https://www.uhk.cz" target="_blank" referrerpolicy="no-referrer">Univerzita Hradec Králové</a></span>
+            <span>&copy; Jiří Škoda <a href="mailto:skodaji1@uhk.cz" target="_blank">&lt;skodaji1@uhk.cz&gt;</a></span>
+            <span>Hradec Králové, 2022</span>
+        </p>
+        <ul class="no-list">
+            <li><a class="compact" href="sitemap.html">Mapa stránek</a></li>
+            <li><a class="compact" href="siteinfo.html">Informace o těchto stránkách</a></li>
+            <li><a class="compact" href="https://icons8.com" target="_blank" referrerpolicy="no-referrer">Icons by Icons8</a></li>
+        </ul>
+        <p class="disclaimer">
+            <a rel="license" referrerpolicy="no-referrer" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Semestrální práce (Centrum Omega)</span>, jejímž autorem je <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jiří Škoda</span>, podléhá licenci <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" referrerpolicy="no-referrer">Creative Commons Uveďte původ-Zachovejte licenci 4.0 Mezinárodní </a>.
+        </p>
+        <p class="disclaimer">
+            Tyto stránky vznikly jako pouhá fikce. Podobnost se skutečnými budovami, organizacemi či postavami je čistě náhodná.
+        </p>
+    </footer>
 </body>
-</html>

@@ -1,0 +1,185 @@
+/**
+ * Copyright 2022 Jiri Skoda <developer@skodaj.cz>
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* File containing definitions of styles of used icons */
+
+a[href="index.html"]::before,
+a[href="../index.html"]::before,
+a[href="../../index.html"]::before{
+    content: var(--image-home);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a[href="pages/akce.html"]::before,
+a[href="akce.html"]::before,
+a[href="../akce.html"]::before,
+a[href="../../akce.html"]::before{
+    content: var(--image-program);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a[href="pages/novinky.html"]::before,
+a[href="novinky.html"]::before,
+a[href="../novinky.html"]::before,
+a[href="../../novinky.html"]::before{
+    content: var(--image-news);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a[href="pages/o-nas.html"]::before,
+a[href="o-nas.html"]::before,
+a[href="../o-nas.html"]::before,
+a[href="../../o-nas.html"]::before{
+    content: var(--image-about);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a[href="sitemap.html"]::before,
+a[href="../sitemap.html"]::before,
+a[href="../../sitemap.html"]::before{
+    content: var(--image-sitemap-s);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+a.compact[href="index.html"]::before,
+a.compact[href="../index.html"]::before,
+a.compact[href="../../index.html"]::before{
+    content: var(--image-home-s);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+a.compact[href="sitemap.html"]::before,
+a.compact[href="../sitemap.html"]::before,
+a.compact[href="../../sitemap.html"]::before{
+    content: var(--image-sitemap-s);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+a[href="https://icons8.com"]::before{
+    content: var(--image-icon8-s);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+a.compact[href="siteinfo.html"]::before,
+a.compact[href="../siteinfo.html"]::before,
+a.compact[href="../../siteinfo.html"]::before{
+    content: var(--image-about-webpage-s);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+a.compact[href="pages/o-nas.html"]::before{
+    content: var(--image-about-s);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+a.compact[href="pages/akce.html"]::before,
+a.compact[href="akce.html"]::before,
+a.compact[href="../akce.html"]::before,
+a.compact[href="../../akce.html"]::before{
+    content: var(--image-program-s);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@supports(content: "x" / "y")
+{
+    a[href="index.html"]::before,
+    a[href="../index.html"]::before,
+    a[href="../../index.html"]::before{
+        content: var(--image-home) / "Ikona domečku";
+    }
+    
+    a[href="pages/akce.html"]::before,
+    a[href="akce.html"]::before,
+    a[href="../akce.html"]::before,
+    a[href="../../akce.html"]::before{
+        content: var(--image-program) / "Ikona seznamu";
+    }
+    
+    a[href="pages/novinky.html"]::before,
+    a[href="novinky.html"]::before,
+    a[href="../novinky.html"]::before,
+    a[href="../../novinky.html"]::before{
+        content: var(--image-news) / "Ikona novin";
+    }
+    
+    a[href="pages/o-nas.html"]::before,
+    a[href="o-nas.html"]::before,
+    a[href="../o-nas.html"]::before,
+    a[href="../../o-nas.html"]::before{
+        content: var(--image-about) / "Ikona bubliny s písmenem I";
+    }
+    
+    a[href="sitemap.html"]::before,
+    a[href="../sitemap.html"]::before,
+    a[href="../../sitemap.html"]::before{
+        content: var(--image-sitemap-s) / "Ikona zeměkoule s nápisem WWW";
+    }
+
+    a.compact[href="index.html"]::before,
+    a.compact[href="../index.html"]::before,
+    a.compact[href="../../index.html"]::before{
+    content: var(--image-home-s) / "Ikona domečku";
+    }
+
+    a.compact[href="sitemap.html"]::before,
+    a.compact[href="../sitemap.html"]::before,
+    a.compact[href="../../sitemap.html"]::before{
+        content: var(--image-sitemap-s) / "Ikona zeměkoule s nápisem WWW";
+    }
+
+    a[href="https://icons8.com"]::before{
+        content: var(--image-icon8-s) / "Logo Icons8";
+    }
+
+    a[href="siteinfo.html"]::before,
+    a[href="../siteinfo.html"]::before,
+    a[href="../../siteinfo.html"]::before{
+        content: var(--image-about-webpage-s) / "Obrázek písmene I v kruhu";
+    }
+
+    a.compact[href="pages/o-nas.html"]::before{
+        content: var(--image-about-s) / "Ikona písmene I v bublině";
+    }
+
+    a.compact[href="pages/akce.html"]::before,
+    a.compact[href="akce.html"]::before,
+    a.compact[href="../akce.html"]::before,
+    a.compact[href="../../akce.html"]::before{
+        content: var(--image-program-s) / "Ikona seznamu";
+    }
+}

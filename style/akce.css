@@ -1,0 +1,144 @@
+
+main table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+main table tr:nth-child(2n){
+    background-color: var(--colour-background-even);
+}
+
+main table thead{
+    background: var(--colour-background-primary-gradient);
+}
+
+main table td,
+main table th{
+    padding: 5px;
+}
+
+main table td ul{
+    list-style: none;
+}
+
+main table td ul li{
+    display: inline-block;
+}
+
+main table td ul li{
+    background-color: var(--colour-background-primary);
+    padding: 8px;
+    border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+}
+
+#search-form h2{
+    font-size: 14pt;
+}
+
+form{
+    width: 50%;
+}
+
+form label{
+    display: block;
+}
+
+form input,
+form fieldset,
+div.selectize-input{
+    width: 100%;
+    padding: 5px;
+    font-size: 11pt;
+    border: 1px solid var(--colour-foreground);
+    outline: none;
+    background: none;
+    background-color: var(--colour-background);
+    color: var(--colour-foreground);
+    transition: 300ms;
+}
+
+form input:focus{
+    border-color: var(--colour-foreground-primary);
+}
+
+form fieldset label,
+form fieldset input{
+    width: calc(50% - 15px);
+    display: inline-block;
+}
+
+form fieldset > label:first-of-type{
+    margin-right: 15px;
+}
+
+
+button[type="submit"]{
+    border: 1px solid var(--colour-background-primary);
+    background-color: var(--colour-background-primary);
+    outline: none;
+    color: var(--colour-foreground);
+    padding: 10px;
+    transition: 300ms;
+    margin-top: 1rem;
+    font-size: 14pt;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+button[type="submit"]:hover{
+    cursor: pointer;
+    background-color: var(--colour-background-primary);
+    background: var(--colour-background-primary-gradient);
+    color: var(--colour-foreground);
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+button{
+    border: 1px solid var(--colour-foreground);
+    background: none;
+    background-color: var(--colour-background);
+    outline: none;
+    padding: 10px;
+    color: var(--colour-foreground);
+    font-size: 14pt;
+    transition: 300ms;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover{
+    border-color: var(--colour-background-primary);
+    color: var(--colour-foreground-primary);
+}
+
+
+div.selectize-dropdown{
+    display: none !important;
+}
+
+div.selectize-input{
+    width: 100% !important;
+    padding: 5px !important;
+    font-size: 11pt !important;
+    border: 1px solid var(--colour-foreground) !important;
+    outline: none !important;
+    background: none !important;
+    background-color: var(--colour-background) !important;
+    color: var(--colour-foreground) !important;
+    transition: 300ms !important;
+    cursor: text;
+}
+
+div.selectize-input input{
+    border: none;
+}
+
+div.selectize-control .item{
+    display: inline-block;
+    background-color: var(--colour-background-primary);
+    padding: 8px;
+    border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+}
