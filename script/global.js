@@ -16,7 +16,7 @@
 
 const months =     ["ledna", "února", "března", "dubna", "května", "června", "července", "srpna", "září", "října", "listopadu", "prosince"];
 const monthNames = ["leden", "únor", "březen", "duben", "květen", "červen", "červenec", "září", "říjen", "listopad", "prosinec"]; 
-const days =       ["Každé pondělí", "Každé úterý", "Každou středu", "Každý čtvrtek", "Každý pátek", "Každou sobotu", "Každou neděli"];
+const days =       ["Každou neděli", "Každé pondělí", "Každé úterý", "Každou středu", "Každý čtvrtek", "Každý pátek", "Každou sobotu"];
 
 $(document).ready(function(){
     $("time").not("footer time, .regular time").each(function(){
@@ -86,7 +86,15 @@ $(document).ready(function(){
                 date.setFullYear(now.getFullYear() + 1);
             }
         }
+        else
+        {
+            date.setMonth(now.getMonth());
+            date.setFullYear(now.getFullYear());
+        }
         text += days[date.getDay()] + ", " + (date.getHours() < 10 ? "0" + date.getHours() : date.getHours()) + ":" + (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes());
-        $(this).parent().text(text);
+        let time = $("<time></time>").attr("datetime", date.toISOString()).text(text);
+        let parent = $(this).parent();
+        $(parent).empty();
+        $(parent).append($(time));
     });
 });

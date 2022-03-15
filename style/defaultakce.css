@@ -45,9 +45,14 @@ dt{
 }
 
 dl ul li{
+    margin-left: 2rem;
+}
+
+dl ul.no-list li{
     background-color: var(--colour-background-primary);
     padding: 8px;
     border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+    margin-left: 0;
 }
 
 dl dl dt{
