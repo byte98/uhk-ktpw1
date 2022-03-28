@@ -62,10 +62,13 @@ $(document).ready(function(){
     });
     $(".month-name").each(function(){
         let now = new Date();
-        now.setMonth((now.getMonth() + 1) % 12);
-        if (now.getMonth() == 11)
+        if ($(this).hasClass("actual") == false)
         {
-            now.setFullYear(now.getFullYear() + 1);
+            now.setMonth((now.getMonth() + 1) % 12);
+            if (now.getMonth() == 11)
+            {
+                now.setFullYear(now.getFullYear() + 1);
+            }
         }
         $(".month-name").text(monthNames[now.getMonth()] + " " + now.getFullYear());
     });

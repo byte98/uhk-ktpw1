@@ -74,6 +74,9 @@
     /* Icon of news */
     --image-news: url("../images/icons/news-dark.webp");
 
+    /* Small version of icon of news */
+    --image-news-s: url("../images/icons/news-s-dark.webp");
+
     /* Icon of program */
     --image-program: url("../images/icons/program-dark.webp");
 

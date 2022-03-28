@@ -115,6 +115,16 @@ a.compact[href="../../akce.html"]::before{
     margin-right: 5px;
 }
 
+a.compact[href="pages/novinky.html"]::before,
+a.compact[href="novinky.html"]::before,
+a.compact[href="../novinky.html"]::before,
+a.compact[href="../../novinky.html"]::before{
+    content: var(--image-news-s);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
 @supports(content: "x" / "y")
 {
     a[href="index.html"]::before,
@@ -181,5 +191,12 @@ a.compact[href="../../akce.html"]::before{
     a.compact[href="../akce.html"]::before,
     a.compact[href="../../akce.html"]::before{
         content: var(--image-program-s) / "Ikona seznamu";
+    }
+
+    a.compact[href="pages/novinky.html"]::before,
+    a.compact[href="novinky.html"]::before,
+    a.compact[href="../novinky.html"]::before,
+    a.compact[href="../../novinky.html"]::before{
+        content: var(--image-news-s) / "Ikona novin";
     }
 }
