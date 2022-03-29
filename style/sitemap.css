@@ -14,30 +14,11 @@
  * limitations under the License.
  */
 
-main ul li::marker{
-    content: '├ ';
-    font-size: 24pt;
-    vertical-align: middle;
-    margin-right: 10px;
-    display: inline-block;
-}
-
-main ul li:last-child::marker{
-    content: '└ ';
-}
 
 main ul{
     margin-left: 4rem;
 }
 
 main ul li{
-    margin-top: -7px;
-}
-
-main > section > article > ul:first-child{
-    margin-top: 1rem;
-}
-
-main > section > article > ul:first-child > li::marker{
-    content: none;
+    padding: 5px;
 }

@@ -14,27 +14,46 @@
  * limitations under the License.
  */
 
-article > picture.left,
-article > picture.left > img{
-    float: left;
-    margin-right: 1rem;
-}
+
 article{
     display: block;
     height: fit-content;
     border-bottom: 1px solid var(--colour-foreground-primary);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+    min-height: calc(200px + 2rem);
+    position: relative;
 }
 
 article:last-child{
     border-bottom: none;
 }
 
-article > picture.right,
-article > picture.right > img{
+article:nth-child(2n) > picture,
+article:nth-child(2n) > picture > img{
     float: right;
     margin-left: 1rem;
+}
+
+article:nth-child(2n + 1) > picture,
+article:nth-child(2n + 1) > picture > img{
+    float: left;
+    margin-right: 1rem;
+}
+
+article > picture,
+article > picture > img,
+article > img{
+    display: block;
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+}
+
+article > dl{
+    position: absolute;
+    top: 0;
+    right: 1rem;
 }
 
 article > dl > dt{
