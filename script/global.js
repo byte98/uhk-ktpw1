@@ -19,7 +19,7 @@ const monthNames = ["leden", "únor", "březen", "duben", "květen", "červen", 
 const days =       ["Každou neděli", "Každé pondělí", "Každé úterý", "Každou středu", "Každý čtvrtek", "Každý pátek", "Každou sobotu"];
 
 $(document).ready(function(){
-    $("time").not("footer time, .regular time").each(function(){
+    $("time").not("footer time, .regular time, .static").each(function(){
         let datetime = Date.parse($(this).attr("datetime"));
         if (isNaN(datetime))
         {

@@ -98,7 +98,8 @@ a.compact[href="../../siteinfo.html"]::before{
     margin-right: 5px;
 }
 
-a.compact[href="pages/o-nas.html"]::before{
+a.compact[href="pages/o-nas.html"]::before,
+a.compact[href="o-nas.html"]::before{
     content: var(--image-about-s);
     display: inline-block;
     vertical-align: middle;
@@ -182,7 +183,8 @@ a.compact[href="../../novinky.html"]::before{
         content: var(--image-about-webpage-s) / "Obrázek písmene I v kruhu";
     }
 
-    a.compact[href="pages/o-nas.html"]::before{
+    a.compact[href="pages/o-nas.html"]::before,
+    a.compact[href="o-nas.html"]::before{
         content: var(--image-about-s) / "Ikona písmene I v bublině";
     }
 
