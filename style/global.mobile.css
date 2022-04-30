@@ -11,3 +11,12 @@ nav > ul > li > a{
 h1{
     font-size: 32pt;
 }
+
+footer{
+    text-align: center;
+}
+
+footer > dl{
+    float: none;
+    margin-bottom: 1rem;
+}

@@ -16,11 +16,6 @@ article#program > div:nth-of-type(2){
     left: calc(100% - 32px);
 }
 
-#partneri ul li{
-    width: 100%;
-    text-align: center;
-}
-
 article#news > a{
     width: 100%;
     display: inline-block;

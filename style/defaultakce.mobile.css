@@ -1,0 +1,7 @@
+section.content{
+    display: block;
+}
+
+section.content > article.event-info{
+    border-right: none;
+}

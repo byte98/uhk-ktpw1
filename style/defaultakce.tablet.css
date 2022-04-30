@@ -1,0 +1,12 @@
+section.content > article{
+    flex: 3 3 0px;
+}
+
+section.content > article.event-info{
+    flex: 2 2 0px;
+}
+
+section.content picture,
+section.content img{
+    float: none;
+}

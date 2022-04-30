@@ -1,0 +1,11 @@
+article > dl{
+    position: static;
+}
+
+article:nth-child(2n+1) > picture, article:nth-child(2n+1) > picture > img,
+article:nth-child(2n) > picture, article:nth-child(2n) > picture > img,
+article > picture, article > picture > img, article > img{
+    float: none;
+    margin: 0;
+    width: 100%;
+}
