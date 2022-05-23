@@ -1,0 +1,202 @@
+<!--
+ Semestral project (Center Omega) (c) by Jiri Skoda <skodaji1@uhk.cz>
+ 
+ Semestral project (Center Omega) is licensed under a
+ Creative Commons Attribution-ShareAlike 4.0 International License.
+ 
+ You should have received a copy of the license along with this
+ work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../font/clearsans.css">
+    <link type="text/css" rel="stylesheet" href="../style/bright.css">
+    <link type="text/css" rel="stylesheet" href="../style/dark.css" media="screen and (prefers-color-scheme: dark)">
+    <link type="text/css" rel="stylesheet" href="../style/global.css">
+    <link type="text/css" rel="stylesheet" href="../style/global.tablet.css" media="screen and (max-width: 1020px)">
+    <link type="text/css" rel="stylesheet" href="../style/global.mobile.css" media="screen and (max-width: 768px)">
+    <link type="text/css" rel="stylesheet" href="../style/icons.css">
+    <link type="text/css" rel="stylesheet" href="../style/about.css">
+    <link type="text/css" rel="stylesheet" href="../style/about.tablet.css" media="screen and (max-width: 1020px)">
+    <link type="text/css" rel="stylesheet" href="../style/about.mobile.css" media="screen and (max-width: 768px)">
+    <title>O nás | Centrum Omega</title>
+</head>
+<body>
+    <script src="../script/jquery.js" defer></script>
+    <script src="../script/global.js" defer></script>
+    <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
+    <script type="text/javascript">Loader.load();</script>
+    <header>
+        <h1><img src="../images/logo.webp" alt="Logo centra Omega" />Centrum Omega</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Domů</a>
+            </li>
+            <li>
+                <a href="akce.html">Akce</a>
+            </li>
+            <li>
+                <a href="novinky.html">Novinky</a>
+            </li>
+            <li class="selected">
+                <a href="o-nas.html">O nás</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>O nás</h2>
+            <section class="navigation" id="breadcrumb-navigation">
+                <h3>Kde se nacházíte</h3>
+                <menu>
+                    <li><a class="compact" href="../index.html">Domů</a></li>
+                    <li><a class="compact" href="o-nas.html">O nás</a></li>
+                </menu>
+            </section>
+            <article>
+                <h3>Kdy máme otevřeno?</h3>
+                <p>Níže je uvedená pravidelná otevírací doba centra Omega. Změna otevírací doby vyhrazena. Pro případné změny otevírací doby sledujte stránku <a class="compact" href="novinky.html">Novinky</a>.</p>
+                <table>
+                   <thead>
+                        <tr>
+                            <td id="oh-day">Den</td>
+                            <td id="oh-from">Od</td>
+                            <td id="oh-to">Do</td>
+                        </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td headers="oh-day">Pondělí</td>
+                           <td headers="oh-from"><time class="static" datetime="08:00">08:00</time></td>
+                           <td headers="oh-to"><time class="static" datetime="22:00">22:00</time></td>
+                       </tr>
+                       <tr>
+                            <td headers="oh-day">Úterý</td>
+                            <td headers="oh-from"><time class="static" datetime="08:00">08:00</time></td>
+                            <td headers="oh-to"><time class="static" datetime="22:00">22:00</time></td>
+                       </tr>
+                       <tr>
+                            <td headers="oh-day">Středa</td>
+                            <td headers="oh-from"><time class="static" datetime="08:00">08:00</time></td>
+                            <td headers="oh-to"><time class="static" datetime="22:00">22:00</time></td>
+                        </tr> 
+                        <tr>
+                            <td headers="oh-day">Čtvrtek</td>
+                            <td headers="oh-from"><time class="static" datetime="08:00">08:00</time></td>
+                            <td headers="oh-to"><time class="static" datetime="22:00">22:00</time></td>
+                        </tr>    
+                        <tr>
+                            <td headers="oh-day">Pátek</td>
+                            <td headers="oh-from"><time class="static" datetime="08:00">08:00</time></td>
+                            <td headers="oh-to"><time class="static" datetime="22:00">22:00</time></td>
+                        </tr>    
+                        <tr>
+                            <td headers="oh-day">Sobota</td>
+                            <td headers="oh-from"><time class="static" datetime="08:00">08:00</time></td>
+                            <td headers="oh-to"><time class="static" datetime="22:00">22:00</time></td>
+                        </tr>    
+                        <tr>
+                            <td headers="oh-day">Neděle</td>
+                            <td headers="oh-from"><time class="static" datetime="08:00">08:00</time></td>
+                            <td headers="oh-to"><time class="static" datetime="22:00">22:00</time></td>
+                        </tr>       
+                   </tbody>
+                </table>
+            </article>
+            <section class="halved">
+                <h3>Jak se k nám dostanete?</h3>
+                <article>
+                    <article>
+                        <h4>Adresa</h4>
+                        <ul>
+                            <li>Centrum Omega</li>
+                            <li>Fajglova 199</li>
+                            <li>170 00&nbsp;&nbsp;Praha 7 &#8209; Holešovice</li>
+                            <li>Česká republika</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h4>Mapa</h4>
+                        <div id="map"></div>
+                    </article>
+                </article>
+                <article>
+                    <h4>Doprava</h4>
+                    <article>
+                        <h5>Veřejná doprava</h5>
+                        <dl>
+                            <dt class="metro">Metro</dt>
+                            <dd>Stanice Vltavská či Nádraží Holešovice (linka C) a pak asi 500 m pěšky</dd>
+                            <dt class="train">Vlak</dt>
+                            <dd>Stanice Praha&#8209;Bubny (400 m), Praha&#8209;Holešovice zastávka (500 m) nebo Praha&#8209;Holešovice(700 m)</dd>
+                            <dt class="tram">Tramvaj</dt>
+                            <dd>Zastávka Kamenická (linky 1, 8, 12, 25 a 26) a po té 200 m pěšky nebo Veletržní palác (linky 2, 4, 6, 17 a 19) a pak asi 300 m pěšky</dd>
+                            <dt class="bus">Autobus</dt>
+                            <dd>Zastávka Obchodní centrum Stromovka (linka 156) a pak asi 200 m pěšky</dd>
+                        </dl>
+                    </article>
+                    <article>
+                        <h5>Automobil</h5>
+                        <p>Přímo u centra Omega se nachází soukromé parkoviště s kapacitou 20 vozů. Parkování je zpoplatněno 20,- Kč/hodina a platí se na pokladně centra Omega. Parkování je zde umožněno pouze návštěvníkům centra.</p>
+                        <p>Další parkoviště se nachází u nedalekého obchodního centra. Podmínky a ceník parkování lze nalézt na stránkách obchodního centra.</p>
+                    </article>
+                </article>
+            </section>
+            <article>
+                <h3>Centrum Omega</h3>
+                <p>Provozovatelem centra Omega je společnost Omega Entertainment, společnost s r.o.</p>
+                <p>IČ: 12345678</p>
+                <p>DIČ: CZ12345678</p>
+                <p>Společnost je zapsána v obchodním rejstříku vedeném Městským soudem v Praze, oddíl B, vložka 9999.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <dl>
+            <dt>Za správnost obsahu ručí</dt>
+            <dd>Jiří Škoda</dd>
+            <dt>Naposledy upraveno</dt>
+            <dd><time datetime="2022-04-23T14:31">23.04.2022</time></dd>
+        </dl>
+        <p>
+            <span>Semestrální práce</span>
+            <span>KIT/KTPW1 - Technologie pro publikování na Webu I</span>
+            <span><a href="https://fim.uhk.cz" target="_blank" referrerpolicy="no-referrer">Fakulta informatiky a managementu</a>, <a href="https://www.uhk.cz" target="_blank" referrerpolicy="no-referrer">Univerzita Hradec Králové</a></span>
+            <span>&copy; Jiří Škoda <a href="mailto:skodaji1@uhk.cz" target="_blank">&lt;skodaji1@uhk.cz&gt;</a></span>
+            <span>Hradec Králové, 2022</span>
+        </p>
+        <ul class="no-list">
+            <li><a class="compact" href="../sitemap.html">Mapa stránek</a></li>
+            <li><a class="compact" href="../siteinfo.html">Informace o těchto stránkách</a></li>
+            <li><a class="compact" href="https://icons8.com" target="_blank" referrerpolicy="no-referrer">Icons by Icons8</a></li>
+        </ul>
+        <p class="disclaimer">
+            <a rel="license" referrerpolicy="no-referrer" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Semestrální práce (Centrum Omega)</span>, jejímž autorem je <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jiří Škoda</span>, podléhá licenci <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" referrerpolicy="no-referrer">Creative Commons Uveďte původ-Zachovejte licenci 4.0 Mezinárodní </a>.
+        </p>
+        <p class="disclaimer">
+            Tyto stránky vznikly jako pouhá fikce. Podobnost se skutečnými budovami, organizacemi či postavami je čistě náhodná.
+        </p>
+    </footer>
+    <script type="text/javascript">
+        /**
+         * Skript, ktery nacte mapu z portalu Mapy.cz a vlozi ji do stranky 
+         */
+        // SOURADNICE CENTRA
+        const LAT = 14.4240823;
+        const LNG = 50.1042648;
+        var center = SMap.Coords.fromWGS84(LAT, LNG);
+        var m = new SMap(JAK.gel("map"), center, 13);
+        m.addDefaultLayer(SMap.DEF_BASE).enable();
+    </script>
+</body>
+</ht

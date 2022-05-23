@@ -1,0 +1,57 @@
+/**
+ * Semestral project (Center Omega) (c) by Jiri Skoda <skodaji1@uhk.cz>
+ * 
+ * Semestral project (Center Omega) is licensed under a
+ * Creative Commons Attribution-ShareAlike 4.0 International License.
+ * 
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+ */
+
+
+
+td{
+    padding: 5px 20px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table thead{
+    background: var(--colour-background-primary-gradient);
+}
+
+table tr:nth-child(even){
+    background: var(--colour-background-even);
+}
+
+#map{
+    height: 256px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.halved > article{
+    width: calc(50% - 20px);
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    padding: 5px;
+}
+
+h3, h4, h5{
+    font-size: 1rem;
+}
+
+dt{
+    font-weight: bold;
+    font-style: italic;
+}
+
+dd{
+    margin-left: 1rem;
+}

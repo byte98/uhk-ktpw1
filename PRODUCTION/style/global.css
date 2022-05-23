@@ -1,0 +1,205 @@
+/**
+ * Semestral project (Center Omega) (c) by Jiri Skoda <skodaji1@uhk.cz>
+ * 
+ * Semestral project (Center Omega) is licensed under a
+ * Creative Commons Attribution-ShareAlike 4.0 International License.
+ * 
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+ */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'ClearSans', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif';
+    background-color: var(--colour-background);
+    color: var(--colour-foreground);
+    font-size: 12pt;
+}
+
+body::selection,
+body::-moz-selection{
+    background-color: var(--colour-background-primary);
+}
+
+header{
+    background-image: url("../images/building.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+h1{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-size: 48pt;
+}
+
+h1 img{
+    height: 96px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav{
+    background: var(--colour-background-primary-gradient);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 128;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+}
+
+nav > ul > li{
+    flex: 1 1 0px;
+    transition: 300ms;
+}
+
+nav > ul > li.selected{
+    background-color: var(--colour-background-primary);
+}
+
+nav > ul > li > a{
+    text-transform: uppercase;
+    color: var(--colour-foreground);
+    text-decoration: none;
+    transition: 300ms;
+    font-size: 14pt;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+nav > ul > li:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+
+main{
+    padding: 10px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.message{
+    box-shadow: 5px 5px 10px 0px rgb(127, 127, 127);
+    border: 2px solid rgb(127, 127, 127);
+    border-radius: 5px;
+}
+
+.message > *{
+    padding: 2px;
+}
+
+.message.warning{
+    border-color: var(--colour-background-warning);
+}
+
+.message.warning h2{
+    font-size: 12pt;
+    background: var(--colour-background-warning-gradient);
+    text-transform: uppercase;
+}
+
+.message.warning h2::before{
+    content: var(--image-error);
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.flexible{
+    display: flex;
+}
+
+.flexible > *{
+    flex: 1 1 0px;
+}
+
+ul.no-list{
+    list-style: none;
+}
+
+ul.no-list > li{
+    display: inline-block;
+}
+
+main{
+    min-height: calc(100vh - 128px);
+}
+
+footer{
+    border-top: 2px solid var(--colour-background-primary);
+    padding: 10px;
+    box-shadow: 0px -5px 15px 2px var(--colour-background-primary);
+}
+
+@supports (backdrop-filter: invert(10%))
+{
+    footer{
+        backdrop-filter: invert(10%);
+    }
+}
+
+footer > dl{
+    float: right;
+    text-align: center;
+}
+
+footer > dl > dt{
+    font-weight: bold;
+}
+
+footer > p:first-of-type{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: var(--colour-foreground-primary);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+a:hover{
+    text-decoration-style: solid;
+}
+
+a:visited{
+    font-weight: bold;
+}
+
+footer p.disclaimer {
+    text-align: center;
+    font-style: italic;
+}
+
+menu li{
+    display: inline-block;
+}
+
+menu li::before{
+    content: '»';
+    margin-right: 5px;
+}
+
+menu li:first-child:before{
+    content: '';
+}
+
+section.navigation h3{
+    font-size: 12pt;
+}
+
+.fit-content{
+    max-width: 100%;
+}

@@ -1,0 +1,83 @@
+/**
+ * Semestral project (Center Omega) (c) by Jiri Skoda <skodaji1@uhk.cz>
+ * 
+ * Semestral project (Center Omega) is licensed under a
+ * Creative Commons Attribution-ShareAlike 4.0 International License.
+ * 
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+ */
+
+
+:root{
+
+    /* Default background colour */
+    --colour-background: #000;
+
+    /* Translucent variant of background colour */
+    --colour-background-translucent: rgba(0, 0, 0, 0.5);
+
+    /* Primary background colour */
+    --colour-background-primary: rgb(151, 98, 0);
+
+    /* Gradient of primary background colour */
+    --colour-background-primary-gradient: linear-gradient(rgb(228, 121, 0), var(--colour-background-primary));
+
+    /* Background colour of warning message */
+    --colour-background-warning: rgb(139, 114, 0);   
+
+    /* Gradient of warning background colour */
+    --colour-background-warning-gradient: linear-gradient(rgb(255, 196, 0), var(--colour-background-warning));
+
+    /* Background colour for some kind of even items */
+    --colour-background-even: rgb(61, 42, 0);
+
+    /* Default foreground colour (mainly used for text) */
+    --colour-foreground: #fff;
+
+    /* Primary foureground colour */
+    --colour-foreground-primary: rgb(255, 176, 111);
+
+
+
+    /*=========== DEFINITIONS OF IMAGES  ===========*/
+
+    /* Icon of about page */
+    --image-about: url("../images/icons/about-bright.webp");
+
+    /* Small version of icon of about page */
+    --image-about-s: url("../images/icons/about-s-bright.webp");
+
+    /* Small version of icon of about webpage page */
+    --image-about-webpage-s: url("../images/icons/about-pages-s-bright.webp");
+
+    /* Icon of warning or error message */
+    --image-error: url("../images/icons/error-bright.webp");
+
+    /* Icon of home page */
+    --image-home: url("../images/icons/home-bright.webp");
+
+    /* Small version of icon of home page */
+    --image-home-s: url("../images/icons/home-s-bright.webp");
+
+    /* Small version of Icons8 icon */
+    --image-icon8-s: url("../images/icons/icons8-s-bright.webp");
+
+    /* Icon of lecturer */
+    --image-lecturer: url("../images/icons/lecturer-bright.webp");
+
+    /* Icon of news */
+    --image-news: url("../images/icons/news-bright.webp");
+
+    /* Small version of icon of news */
+    --image-news-s: url("../images/icons/news-s-bright.webp");
+
+    /* Icon of program */
+    --image-program: url("../images/icons/program-bright.webp");
+
+    /* Small version of icon of program */
+    --image-program-s: url("../images/icons/program-s-bright.webp");
+
+    /* Small version of icon of sitemap */
+    --image-sitemap-s: url("../images/icons/sitemap-s-bright.webp");
+}

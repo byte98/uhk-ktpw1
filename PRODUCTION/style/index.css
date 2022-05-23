@@ -1,0 +1,117 @@
+/**
+ * Semestral project (Center Omega) (c) by Jiri Skoda <skodaji1@uhk.cz>
+ * 
+ * Semestral project (Center Omega) is licensed under a
+ * Creative Commons Attribution-ShareAlike 4.0 International License.
+ * 
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+ */
+
+
+
+ #program picture, #program img{
+    width: 256px;
+    height: 178px;
+    object-fit: contain;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#program dt{
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#program dd.name{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+dt.lecturer::before{
+    content: var(--image-lecturer);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+article#program{
+    max-width: 50%;
+}
+
+article#program > ul{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 415px;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    scrollbar-width: none;
+    transition-timing-function: ease-in-out;
+    transition: 300ms;
+    scroll-behavior: smooth;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+article#program > ul > li{
+    box-shadow: 5px 5px 5px rgb(127, 127, 127);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(127, 127, 127);
+    margin: 5px;
+}
+
+article#program > ul > li > a{
+    color: var(--colour-foreground);
+    text-decoration: none;
+}
+
+article#program > div{
+    position: absolute;
+    height: 400px;
+    width: 32px;
+}
+
+article#program > div:nth-of-type(1){
+    background: linear-gradient(90deg, var(--colour-background), transparent);
+}
+
+article#program > div:nth-of-type(2){
+    background: linear-gradient(90deg, transparent, var(--colour-background));
+    left: calc(50% - 32px);
+}
+
+article#news{
+    margin-left: 10px;
+}
+
+article#news > a img{
+    max-width: 100%;
+}
+
+article#news table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+article#news table td,
+article#news table th{
+    padding: 5px;
+}
+
+article#news tr > td:first-child{
+    text-align: center;
+}
+
+article#news tr:nth-child(even){
+    background-color: var(--colour-background-even);
+}
+
+article#news thead{
+    background: var(--colour-background-primary-gradient);
+}
+
+
